@@ -142,10 +142,20 @@ li a{
     justify-content: center;
     align-items: center;
 }
+.flags img{
+    height: 20px;
+    width: 25px;
+}
+.flags{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    justify-content: center;
+    padding: 10px 0;
+}
 @media only screen and (min-width: 768px) {
-
     #menu{
-    left: 30%;
+    right: 20px;
     background-color: transparent;
     text-align: center;
     height: 10vh;
@@ -157,10 +167,32 @@ li a{
     justify-content: space-around;
     align-items: center;
     white-space: nowrap;
+    font-size: .7rem;
+}
+#menu ul{
+    position: fixed;
 }
 .d-hidden{display: none;}
 .m-hidden{display: block;}
 .center{
     max-width: 720px;
+}
+#menu > li:hover{
+    border: 2px solid #fff;
+    border-radius: 20px;
+}
+ul{
+    border-top: 2px solid #76418c;
+}
+ul > li{
+    background-color: #fff;
+    display: flex;
+    text-align: center;
+}
+ul > li:hover{
+    background-color: #76418c;
+    a{
+        color: #fff;
+    }
 }
 }   
