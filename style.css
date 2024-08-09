@@ -109,8 +109,9 @@ li a{
 }
 .cross{
     font-size: 30px;
-    display: flex;
-    justify-content: flex-end;
+    display: inline-block;
+    position: absolute;
+    right: 10px;
     padding-right: 20px;
     color: #76418c;
 }
