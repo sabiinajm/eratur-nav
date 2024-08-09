@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eratur - Sabi</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+        <div class="center">
+            <nav id="navbar">
+                <div class="logo"><img src="./img/logo.png" alt="logo"></div>
+                <div id="menu">
+                    <p class="cross d-hidden" onclick="bagla()">×</p>
+                    <div class="logo d-hidden"><img src="./img/logo.png" alt="logo"></div>
+                    <li onclick="tab('company')"><a href="#">Şirkət ↴</a>
+                        <ul id="company">
+                            <li><a href="#">Haqqımızda</a></li>
+                            <li><a href="#">Sertifikatlar</a></li>
+                            <li><a href="#">Karyera</a></li>
+                        </ul>
+                    </li>
+                    <li onclick="tab('reviews')"><a href="#">Müştəri Rəyləri ↴</a>
+                        <ul id="reviews">
+                            <li><a href="#">Müştəri fikirləri</a></li>
+                            <li><a href="#">Səyahət görüntüləri</a></li>
+                            <li><a href="#">Karyera</a></li>
+                        </ul>
+                    </li>
+                    <li onclick="tab('tours')"><a href="#">Turlar ↴</a>
+                        <ul id="tours">
+                            <li><a href="#">Daxili Turlar</a></li>
+                            <li><a href="#">Xarici Turlar</a></li>
+                            <li><a href="#">Qrup Turları</a></li>
+                            <li><a href="#">Ekskursiyalar</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#">Xidmətlər</a></li>
+                    <li onclick="tab('partners')"><a href="#">Əməkdaşlar ↴</a>
+                        <ul id="partners">
+                            <li><a href="#">Avia Şirkətlət</a></li>
+                            <li><a href="#">Korporativ Əməkdaşlıq</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#">Azərbaycanı Kəşf Et</a></li>
+                    <li><a href="#">Əlaqə</a></li>
+                    <li><a href="#" class="btn d-hidden">Qiymət təklifi al</a></li>
+                    <div class="socials d-hidden">
+                        <i class="i-btn fa-brands fa-facebook-f"></i>
+                        <i class="i-btn fa-brands fa-instagram"></i>
+                        <i class="i-btn fa-brands fa-youtube"></i>
+                    </div>
+                    <li><a href="#">Az</a>
+                        <ul>
+                            <li><a href="#">Ru</a></li>
+                            <li><a href="#">En</a></li>
+                        </ul>
+                    </li>
+                </div>
+                <div id="hamburger" onclick="ach()">
+                    <span class="d-hidden"></span>
+                    <span class="d-hidden"></span>
+                    <span class="d-hidden"></span>
+                </div>
+            </nav>
+        </div>
+    </header>
+    <main>
+        <div class="slider">
+            <div class="swiper mySwiper">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide"><img src="./img/bg.jpeg" alt="bg-img" /></div>
+                    <div class="swiper-slide"><img src="./img/slider-1.png" alt="bg-img" /></div>
+                    <div class="swiper-slide"><img src="./img/slider-2.png" alt="bg-img" /></div>
+                </div>
+                <div class="swiper-pagination"></div>
+            </div>
+        </div>
+    </main>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script>
+        var swiper = new Swiper(".mySwiper", {
+            spaceBetween: 30,
+            centeredSlides: true,
+            autoplay: {
+                delay: 2500,
+                disableOnInteraction: false,
+            },
+            pagination: {
+                el: ".swiper-pagination",
+                clickable: true,
+            },
+            navigation: {
+                nextEl: ".swiper-button-next",
+                prevEl: ".swiper-button-prev",
+            },
+        });
+    </script>
+    <script src="script.js"></script>
+</body>
+
+</html>
